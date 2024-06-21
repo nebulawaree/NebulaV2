@@ -2,15 +2,15 @@ repeat task.wait() until game:IsLoaded()
 task.wait(0.5)
 local BwGames = {6872274481,8444591321,8560631822}
 if not table.find(BwGames,game.PlaceId) then
-    warn("[CometV2] Game not Supported!")
+    warn("[Nebula] Game not Supported!")
     return
 end
-shared["CometConfigs"] = {
+shared["NebulaConfigs"] = {
     StrokeTransparency = 0.75,
     Color = Color3.fromRGB(255,65,65),
     Enabled = false
 }
-local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Ham-135/CometV2/main/GuiLibrary.lua"))()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/nebulawaree/NebulaV2/main/GuiLibrary.lua"))()
 local getasset = getsynasset or getcustomasset
 local ScreenGuitwo = game:GetService("CoreGui").RektskyNotificationGui
 local lplr = game:GetService("Players").LocalPlayer
@@ -1340,9 +1340,9 @@ runcode(function()
 end)
 
 task.delay(0.5, function()
-    CreateNotification("Comet V2","Comet V2 Loaded! Hope you enjoy! discord.gg/fJNbvucPS5",15)
+    CreateNotification("Nebula"," V1 Loaded! Hope you enjoy!",15)
     game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage",{
-        Text = "Comet V2 Loaded!\nMade by Ham135 and Car (Also on YT)!\ndiscord.gg/fJNbvucPS5",
+        Text = "Nebula Loaded!\nMade by nebul (Also on YT)!",
         Color = Color3.fromRGB(255,65,65),
         Font = Enum.Font.SourceSansBold
     })
